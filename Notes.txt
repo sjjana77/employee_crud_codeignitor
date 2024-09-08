@@ -1,0 +1,9 @@
+1) Config base_url in Config file
+2) replace $config['index_page'] = 'index.php'; to $config['index_page'] = ''; in config file
+3) replace $config['uri_protocol']	= 'AUTO'; to $config['uri_protocol']	= 'REQUEST_URI'; in config file
+4) set .htaccess file at outside in root folder
+5) Go to xampp\apache\conf\httpd.conf:
+    a. #LoadModule rewrite_module modules/mod_rewrite.so to LoadModule rewrite_module modules/mod_rewrite.so
+    b. AllowOverride None to AllowOverride All
+
+ 
